@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -20,6 +21,7 @@ h2, h4 {
   display: flex;
   padding: 10px;
   word-wrap: break-word;
+  margin-bottom: 10px;
 }
 
 section {
@@ -100,6 +102,7 @@ section {
   background-color: black;
   width: 100%;
   flex-wrap: wrap;
+  padding: 10px;
 }
 
 /* Product Gallery Styles */
@@ -151,6 +154,7 @@ max-width: 1000px;
   justify-content: center;
   flex-flow: row wrap;
   overflow-x: scroll;
+  padding: 20px 0px;
 }
 
 .location {
@@ -163,4 +167,16 @@ max-width: 1000px;
   align-items: center;
   justify-content: space-between;
   margin: 10px 20px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 530px) {
+  li {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
 }
