@@ -1,0 +1,160 @@
+/* Universal styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  display: block;
+}
+
+h2, h4 {
+  display: flex;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+/* Navbar styles */
+
+.navbar {
+  position: fixed;
+  height: 69px;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid seashell;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  z-index: 10;
+}
+
+
+.logo img {
+  height: 50px;
+  width: auto;
+  margin-left: 10px;
+}
+
+.nav-items ul {
+  margin-right: 10px;
+}
+
+.nav-items li{
+  display: inline-block;
+  text-decoration: underline;
+  margin: 0px 5px;
+}
+
+/* Main content styles */
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Featured image style */
+
+.featured-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 69px;
+  height: 700px;
+  width: 1200px;
+}
+
+.featured-image.mission {
+  background-image: url(./img/img-mission-background.webp);
+}
+
+.featured-image.locations {
+  background-image: url(./img/img-locations-background.webp);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Product Gallery Styles */
+
+.product-gallery {
+  position: relative;
+  top: 75px;
+  display: flex;
+flex-direction: column;
+align-items: center;
+max-width: 1000px;
+}
+
+.product-gallery__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-gallery__images {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.product-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  width: 300px;
+}
+
+.product-image img {
+  height: 200px;
+}
+
+.locations {
+  height: 500px;
+}
+
+.locations-header {
+  margin-bottom: 15px;
+}
+
+.locations-container {
+  display: flex;
+  align-items: center;
+}
+
+.location {
+  height: 300px;
+  min-width: 300px;
+  padding: 20px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
